@@ -4,18 +4,16 @@ from datetime import timedelta
 from django.utils import timezone
 import os
 
-load_dotenv('C:\hris_api_dev/.env')
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv('C:\hris_api_dev/.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.getenv("SECRET_KEY")
-SECRET_KEY = 'cz_n()%u=-7wa7(yik=9xwm1zbt5*bp^17x+y6j%=ybw2(=hf2'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
