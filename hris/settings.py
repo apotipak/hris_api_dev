@@ -31,6 +31,7 @@ else:
         "http://127.0.0.1:3001",
         "http://localhost:8003",
         "http://127.0.0.1:8003",
+        "http://202.44.230.134:8003",
     ]
 
 AUTH_USER_MODEL ='user.User'
