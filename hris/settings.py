@@ -7,7 +7,8 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv('C:\hris_api_dev/.env')
+# load_dotenv('C:\hris_api_dev/.env')
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -28,6 +29,8 @@ else:
         "http://127.0.0.1:3000",
         "http://localhost:3001",
         "http://127.0.0.1:3001",
+        "http://localhost:8003",
+        "http://127.0.0.1:8003",
     ]
 
 AUTH_USER_MODEL ='user.User'
