@@ -20,7 +20,11 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") == "True"
 
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+
 ALLOWED_HOSTS = ['*']
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
@@ -38,7 +42,7 @@ else:
         "http://202.44.230.134:8005",
         "http://localhost:8006",
         "http://127.0.0.1:8006",
-        "http://202.44.230.134:8006",        
+        "http://202.44.230.134:8006",     
     ]
 
 AUTH_USER_MODEL ='user.User'
