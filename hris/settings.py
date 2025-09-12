@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'django_user_agents',
     'module',
     'user',
+    'company',
 ]
 
 MIDDLEWARE = [
