@@ -84,8 +84,7 @@ def deviceInfo(request:HttpRequest):
 def me(request:HttpRequest):
 
     userid = request.user.id
-    print("userid", userid)
-
+    # print("userid", userid)
 
     try:
         User = get_user_model()
@@ -145,7 +144,7 @@ def get(request):
 
     # print("user", user)
     # print(Permission.objects.filter(group__user=user))
-    print("permissions", list(user.get_all_permissions()))
+    # print("permissions", list(user.get_all_permissions()))
 
     # res = list(user.user_permissions.all())
     # for item in res:

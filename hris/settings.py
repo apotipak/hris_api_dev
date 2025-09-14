@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     'ninja_jwt',
     'ninja_extra',
     'corsheaders',
@@ -65,6 +66,12 @@ INSTALLED_APPS = [
     'module',
     'user',
     'company',
+    'd1',
+    'd2',
+    'd3',
+    'm1',
+    'm3',
+    'm5',
 ]
 
 MIDDLEWARE = [
